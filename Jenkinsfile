@@ -6,5 +6,12 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/berilkoko97/demo-counter-app'
             }
         }
+
+        stage('Unit Testing'){
+            steps{
+                sh 'mvn test'
+                
     }
+
+
 }
